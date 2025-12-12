@@ -9,8 +9,8 @@ const posts = (await getCollection('blog'))
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
 	.slice(0, 4)
 
-const images = ['/hero2.jpg', '/hero3.jpg']
-const randomImage = images[Math.floor(Math.random() * images.length)]
+// const images = ['/hero2.jpg', '/hero3.jpg']
+// const randomImage = images[Math.floor(Math.random() * images.length)]
 
 // import hero2 from '../assets/hero2.jpg'
 // import hero3 from '../assets/hero3.jpg'
@@ -27,12 +27,19 @@ const randomImage = images[Math.floor(Math.random() * images.length)]
 	}
 </style>
 
+<script>
+	const images = ['/hero2.jpg', '/hero3.jpg'] // from /public
+	const randomImage = images[Math.floor(Math.random() * images.length)]
+
+	const hero = document.getElementById('hero')
+	hero.style.backgroundImage = `
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(${randomImage})
+  `
+</script>
+
 <BaseLayout>
-	<div
-		class="bg-hero bg-yellow-400 w-full"
-		style={`background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-			url(${randomImage});`}
-	>
+	<div id="hero" class="bg-hero bg-yellow-400 w-full">
 		<main
 			class="app-container flex flex-col gap-12 justify-center py-36 md:py-48 pt-44 md:pt-56 relative"
 		>
