@@ -16,15 +16,17 @@ const posts = (await getCollection('blog'))
 			class="app-container flex flex-col gap-12 justify-center py-36 md:py-48 pt-44 md:pt-56 relative"
 		>
 			<section class="hero-section text-white">
-					<p class="block text-3xl opacity-70 mt-9 mb-4">Bushcraft e sobrevivência</p>
-					<h1 class="text-8xl font-bold leading-none">Luciano Tigre</h1>
-					<p class="text-2xl max-w-2xl font-light leading-normal">
-						Sobrevivência | Selva | Mar | Deserto | Gelo
-					</p>
+				<p class="block text-3xl opacity-70 mt-9 mb-4">
+					Bushcraft e sobrevivência
+				</p>
+				<h1 class="text-8xl font-bold leading-none">Luciano Tigre</h1>
+				<p class="text-2xl max-w-2xl font-light leading-normal">
+					Sobrevivência | Selva | Mar | Deserto | Gelo
+				</p>
 				<div class="flex flex-wrap gap-8">
 					{
 						SocialLinks.map((link) => (
-								<a
+							<a
 								class="text-xl text-primary dark:text-primary-dark underline hover:underline underline-offset-4"
 								href={link.url}
 								target="_blank"
@@ -35,9 +37,8 @@ const posts = (await getCollection('blog'))
 					}
 				</div>
 			</section>
-		</main>	
+		</main>
 	</div>
-	
 
 	<!-- Recent Posts Section -->
 	<!-- <section class="app-container">
@@ -56,12 +57,15 @@ const posts = (await getCollection('blog'))
 		<div class="space-y-6">
 			<h2 class="section-title">Sobre mim</h2>
 			<p class="text-lg max-w-xl pb-4">
-				Teste
-				A brief introduction about yourself. You can include your profession,
-				hobbies, interests, or anything you'd like visitors to know about you.
+				Luciano Tigre é apresentador do Discovery Channel e da nova temporada de
+				Desafio em Dose Dupla Brasil técnicas de sobrevivência Piloto de avião,
+				Professor e instrutor de sobrevivência na Selva para os Cursos de
+				Comissário de bordo e Pilotos de aeronaves em Curitiba - Drakon escola
+				de aviação Civil e Aeroporto do Bacacheri. Também professor de
+				meteorologia aeronáutica para o curso de Pilotos de avião e helicóptero.
 			</p>
 			<a class="btn-secondary" href={`${SITE_BASE}/about`}
-				>Go to About
+				>Leia mais
 				<Icon size={20} name="mdi:arrow-right" />
 			</a>
 		</div>
