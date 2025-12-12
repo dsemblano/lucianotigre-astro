@@ -24,12 +24,12 @@ html {
 	@apply container mx-auto px-6 sm:px-12 2xl:px-16;
 }
 
-.bg-hero {
-		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("/hero2.jpg");
+/* .bg-hero {
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("/hero3.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
 		background-size: cover;
-}
+} */
 
 #mobile-menu.mobile-nav-open {
 	@apply translate-x-0 shadow-xl/30;

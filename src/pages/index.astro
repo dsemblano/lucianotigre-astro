@@ -8,10 +8,31 @@ import { getCollection } from 'astro:content'
 const posts = (await getCollection('blog'))
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
 	.slice(0, 4)
+
+const images = ['/hero2.jpg', '/hero3.jpg']
+const randomImage = images[Math.floor(Math.random() * images.length)]
+
+// import hero2 from '../assets/hero2.jpg'
+// import hero3 from '../assets/hero3.jpg'
+
+// const images = [hero2.src, hero3.src]
+// const randomImage = images[Math.floor(Math.random() * images.length)]
 ---
 
+<style>
+	.bg-hero {
+		background-size: cover;
+		background-position: top center;
+		background-repeat: no-repeat;
+	}
+</style>
+
 <BaseLayout>
-	<div class="bg-hero bg-yellow-400 w-full">
+	<div
+		class="bg-hero bg-yellow-400 w-full"
+		style={`background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+			url(${randomImage});`}
+	>
 		<main
 			class="app-container flex flex-col gap-12 justify-center py-36 md:py-48 pt-44 md:pt-56 relative"
 		>
