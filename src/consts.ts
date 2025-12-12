@@ -12,20 +12,16 @@ export const SITE_BASE = ''
 
 export const SocialLinks = [
 	{
-		name: 'GitHub',
-		url: 'https://github.com/yashjawale',
-	},
-	{
-		name: 'LinkedIn',
-		url: 'https://www.linkedin.com/in/yashjawale/',
-	},
-	{
-		name: 'X / Twitter',
-		url: 'https://twitter.com/imyashjawale',
+		name: 'Facebook',
+		url: 'https://www.facebook.com/luciano.tigre.5',
 	},
 	{
 		name: 'Instagram',
-		url: 'https://instagram.com/imyashjawale',
+		url: 'https://www.instagram.com/lucianotiggre/',
+	},
+	{
+		name: 'Youtube',
+		url: 'https://www.youtube.com/@lucianotigre',
 	},
 ]
 
@@ -39,7 +35,7 @@ export const WebsiteLinks = [
 		url: 'blog',
 	},
 	{
-		name: 'About',
+		name: 'Sobre',
 		url: 'about',
 	},
 ]
