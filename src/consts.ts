@@ -3,7 +3,7 @@
 
 export const SITE_TITLE = 'Luciano Tigre'
 export const SITE_DESCRIPTION =
-	'A simple theme for personal blog sites, created for Astro framework'
+	'Bushcraft e sobrevivência. Apresentador do @discoverybr. Conheça nossos produtos!'
 
 // If you deploy to a subdirectory, set the `WEBSITE_BASE` here.
 // e.g. '/blog' if you are deploying to example.com/blog
